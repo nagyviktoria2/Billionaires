@@ -281,4 +281,4 @@ for link in lst:
 
 #print(data)
         
-        data_transposed.to_excel('Billionaire_s.xlsx')
+        data_transposed.to_excel('Billionaire.xlsx')
