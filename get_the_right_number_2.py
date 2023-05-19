@@ -58,3 +58,7 @@ if valid_site:
     print(extracted_number)
 else:
     print("No valid site found.")
+
+N = extracted_number
+
+for i in range(N+1)
