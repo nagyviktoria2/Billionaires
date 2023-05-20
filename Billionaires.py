@@ -9,18 +9,24 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
+N = 100 
 
 
-base_url = "https://www.therichest.com/top-lists/top-250-richest-people-in-the-world/page/"
+base_url =  
 
 sites_to_visit = []    #empty list to store all sites to visit
 
-##loop through all the pages:
-for i in range(1,11):
-    site = f"{base_url}{i}{'/'}"
-    sites_to_visit.append(site)
 
+def get_raw_richies(N: int): 
+  ##loop through all the pages:
+  for i in range(1,11):
+  site equals     
+  while site not empty"
+      try" 
+      site = f"{base_url}{i}{'/'}"
+      sites_to_visit.append(site)
 
+raw_richies ´get_raw
 
 #print(sites_to_visit)
 
@@ -34,7 +40,7 @@ for url in sites_to_visit:
     
     ##create a beautifulsoup object from the content of the response:
     soup = BeautifulSoup(response.content, 'lxml')
-    
+    # TODO: persist data
     
     tr = soup.body.find('div', class_='w-content').find_all('a', class_='')
     

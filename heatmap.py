@@ -17,7 +17,8 @@ data = pd.read_excel('Bili.xlsx')
 #extracting the countries:
 data['country'] = data['birth_place'].apply(lambda x: GeoText(x).countries[0] if GeoText(x).countries else None)
 
-#print(data)
+print(data['birth_place'])
+print(data['country'])
 #data.to_excel('countries_as.xlsx')
 
 #so that the net_worth column contains only numerical values:
