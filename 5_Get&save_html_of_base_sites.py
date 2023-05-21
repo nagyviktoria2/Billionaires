@@ -21,8 +21,8 @@ for url in urls:
 
 import requests
 from bs4 import BeautifulSoup
-from load_json_file_fction import load_sites_to_visit
-from Get_sites_up_to_x_site_list import get_urls_up_to_number
+from 2_load_json_file_fction import load_sites_to_visit
+from 4_Get_sites_up_to_x_site_list import get_urls_up_to_number
 
 def persist_html_content(number, file_name='combined_data.html'):
     """

@@ -1,5 +1,5 @@
-from Get_the_right_number_of_site import find_valid_sites
-from load_json_file_fction import load_sites_to_visit
+from 3_Get_the_right_number_of_site import find_valid_sites
+from 2_load_json_file_fction import load_sites_to_visit
 
 def get_urls_up_to_number(sites_to_visit, number_to_search):
     """

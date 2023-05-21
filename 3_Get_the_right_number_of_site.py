@@ -6,7 +6,7 @@ This number can be modified.
 '''
 import requests
 from bs4 import BeautifulSoup
-from load_json_file_fction import load_sites_to_visit
+from 2_load_json_file_fction import load_sites_to_visit
 
 sites_to_visit = load_sites_to_visit()
 
