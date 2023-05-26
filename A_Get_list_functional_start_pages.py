@@ -1,5 +1,6 @@
 import requests
 import json
+from A_a_json_writer import write_to_json
 
 def visit_functional_pages(base_url):
     """
@@ -35,12 +36,12 @@ def visit_functional_pages(base_url):
             print(f"An error occurred while accessing {site}: {e}")
             break
 
-    # Save the list to a JSON file
-    with open('sites_to_visit.json', 'w') as file:
-        json.dump(sites_to_visit, file)
 
     return sites_to_visit
 
 base_url = "https://www.therichest.com/top-lists/top-250-richest-people-in-the-world/page/"
 functional_pages = visit_functional_pages(base_url)
 print(functional_pages)
+
+# Save the list to a JSON file using the write_to_json function
+write_to_json('sites_to_visit.json', functional_pages)

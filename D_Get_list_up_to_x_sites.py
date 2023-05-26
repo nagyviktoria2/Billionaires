@@ -26,7 +26,7 @@ def get_urls_up_to_number(sites_to_visit, number_to_search):
 
 # Example usage:
 '''
-sites_to_visit = load_sites_to_visit()
+sites_to_visit = load_sites_to_visit('sites_to_visit.json')
 number_to_search = 250
 urls = get_urls_up_to_number(sites_to_visit, number_to_search)
 print(urls)
