@@ -77,8 +77,10 @@ def create_dictio_from_html(ppl):
     return dictio
 
 # Usage example
+'''
 ppl = load_html_document(file_name='ppl_soup.html', parser='html.parser')
 dictio = create_dictio_from_html(ppl)
 print(dictio)
 
 write_to_json('people_info.json', dictio)
+'''

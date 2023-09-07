@@ -38,10 +38,11 @@ def visit_functional_pages(base_url):
 
 
     return sites_to_visit
-
+'''
 base_url = "https://www.therichest.com/top-lists/top-250-richest-people-in-the-world/page/"
 functional_pages = visit_functional_pages(base_url)
 print(functional_pages)
 
 # Save the list to a JSON file using the write_to_json function
 write_to_json('sites_to_visit.json', functional_pages)
+'''

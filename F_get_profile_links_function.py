@@ -1,13 +1,14 @@
 from F_load_html_function import load_html_document
 from F_get_hrefs_function import extract_href_with_prefix
 from A_a_json_writer import write_to_json
-
+'''
 loaded_html = load_html_document(file_name='combined_data.html')
 hrefs = extract_href_with_prefix(loaded_html, tag='a', prefix='/celebnetworth/', class_name='')
+
 #print(hrefs)
     
 prefix = 'https://www.therichest.com'
-
+'''
 
 def join_prefix_and_links(hrefs, prefix):
     """
@@ -30,8 +31,10 @@ def join_prefix_and_links(hrefs, prefix):
 
     return joined_links
 
+
+'''
 joined_links_ppl = join_prefix_and_links(hrefs, prefix)
 
 write_to_json('ppl_links.json', joined_links_ppl)
-
+'''
 #print(joined_links_ppl)

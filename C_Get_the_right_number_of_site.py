@@ -8,7 +8,9 @@ import requests
 from bs4 import BeautifulSoup
 from B_load_json_file_fction import load_sites_to_visit
 
+'''
 sites_to_visit = load_sites_to_visit('sites_to_visit.json')
+'''
 
 def find_valid_sites(sites_to_visit, number):
     """
@@ -45,7 +47,7 @@ def find_valid_sites(sites_to_visit, number):
 
     return extracted_number
 
-# Example usage:
+#example usage:
 '''
 number_to_search = 250
 
